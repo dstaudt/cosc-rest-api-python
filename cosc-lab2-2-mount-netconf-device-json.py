@@ -12,7 +12,8 @@ password = ""
 url = "https://"+cosc_ip+"/controller/restconf/config/opendaylight-inventory:nodes/node/controller-config/yang-ext:mount/config:modules"
 
 # take user input
-print ('!!! For simplicity, demo program will NOT verify the data for format you entered, please enter carefully !!!\n')
+print ('!!! For simplicity, the demo program will NOT verify the data format you entered, so please enter it carefully !!!\n')
+
 name = input('=> Please use a unique name that easy for you to remember. We will use it for unmount API in later.\nEnter a device name: ')
 name = name.replace(" ","") # ignore space
 ip = input('=> Enter a device ip or DNS hostname: ')
@@ -25,7 +26,7 @@ password = input('=> Enter a device password: ')
 password = password.replace(" ","") # ignore space
 
 json_payload = {
-    "config:module": [        
+    "config:module": [
             {
                 "name": name,
                 "type": "odl-sal-netconf-connector-cfg:sal-netconf-connector",
@@ -71,7 +72,7 @@ try:
 except:
     print ("Something wrong with the request!")
 
-    
-    
+
+
 
 

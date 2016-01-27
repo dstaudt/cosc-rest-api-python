@@ -60,7 +60,7 @@ url = "https://"+cosc_ip+"/controller/restconf/config/opendaylight-inventory:nod
 
 
 # take user input
-print ('!!! For simplicity, demo program will NOT verify the data format you entered, please enter carefully !!!\n')
+print ('!!! For simplicity, the demo program will NOT verify the data format you entered, so please enter it carefully !!!\n')
 name = input('=> Please use a unique name that easy for you to remember. We will use it for unmount API in later.\nEnter a device name: ')
 name = name.replace(" ","") # ignore space
 ip = input('=> Enter a device ip or DNS hostname: ')
@@ -83,7 +83,7 @@ try:
 except:
     print ("Something wrong with the request!")
 
-    
-    
+
+
 
 
