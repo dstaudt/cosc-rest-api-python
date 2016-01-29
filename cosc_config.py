@@ -13,7 +13,7 @@ cosc_ip = "oscsandbox.cisco.com"
 # Enter user name and password to get a secerety token
 # If you assign username and password here you don't need to pass parameter when calling
 username = "admin"
-password = "1vtG@lw@y"
+password = "C!sc0123"
 
 def get_token(ip=cosc_ip,uname = username,pword = password):
     """ 
