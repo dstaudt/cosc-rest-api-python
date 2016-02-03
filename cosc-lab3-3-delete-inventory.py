@@ -12,7 +12,8 @@ op_list = []
 
 # get operational store id list
 try:
-    r = requests.get(op_url,auth=('token',token),verify=False)      
+    r = requests.get(op_url,auth=('token',token),verify=False)
+    # print ("Response Status: ",r.status_code)
     response_json = r.json() # Get the json-encoded content from response
     nodes=response_json["nodes"]["node"]
     for item in nodes:
@@ -23,7 +24,8 @@ except:
     
 # get config store id list
 try:
-    r = requests.get(config_url,auth=('token',token),verify=False)      
+    r = requests.get(config_url,auth=('token',token),verify=False)
+    # print ("Response Status: ",r.status_code)
     response_json = r.json() # Get the json-encoded content from response
     nodes=response_json["nodes"]["node"]
     for item in nodes:

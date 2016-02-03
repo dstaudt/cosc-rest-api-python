@@ -8,8 +8,8 @@ url = "https://"+cosc_ip+"/controller/restconf/config/opendaylight-inventory:nod
 
 try:
     r = requests.get(url,auth=('token',token),verify=False)      
-    response_json = r.json() # Get the json-encoded content from response
     print ("Response Status: ",r.status_code)    # This is the http request status
+    response_json = r.json() # Get the json-encoded content from response
     print ("Response:\r",json.dumps(response_json,indent=4))    # This is the entire response from the query
 except:
     print ("Something wrong with the request!")
