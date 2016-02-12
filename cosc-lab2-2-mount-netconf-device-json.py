@@ -48,14 +48,15 @@ json_payload = {
                     "type": "opendaylight-md-sal-binding:binding-broker-osgi-registry",
                     "name": "binding-osgi-broker"
                 },
-                "odl-sal-netconf-connector-cfg:max-connection-attempts": 0,
-                "odl-sal-netconf-connector-cfg:connection-timeout-millis": 20000,
                 "odl-sal-netconf-connector-cfg:tcp-only": False,
                 "odl-sal-netconf-connector-cfg:event-executor": {
                     "type": "netty:netty-event-executor",
                     "name": "global-event-executor"
                 },
-                "odl-sal-netconf-connector-cfg:port": 2022,
+                "odl-sal-netconf-connector-cfg:rpc-registry": {
+                    "type": "opendaylight-md-sal-binding:binding-rpc-registry",
+                    "name": "binding-rpc-broker"
+                },
                 "odl-sal-netconf-connector-cfg:processing-executor": {
                     "type": "threadpool:threadpool",
                     "name": "global-netconf-processing-executor"
