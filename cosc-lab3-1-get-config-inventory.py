@@ -13,8 +13,7 @@ try:
     print ("\n**** The following is 'config store' inventory ****\n")
     nodes=response_json["nodes"]["node"]
     for item in nodes:
-        print ("Node ID: ",item["id"])
-    print ("Response:\r",json.dumps(response_json,indent=4))    # This is the entire response from the query
+        print ("Node ID: ",item["id"])   
 except:
     print ("Something wrong with the request!")
 
