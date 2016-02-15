@@ -3,7 +3,7 @@ import json
 
 requests.packages.urllib3.disable_warnings() # disable warning message
 username = 'admin'
-password = '1vtG@lw@y'
+password = 'C!sc0123'
 
 # To get secerety token, the following along with 'x-www-form-urlencoded' encoding(select this when using POSTMAN)
 payload = {'grant_type': 'password', 'username': username,'password':password,'scope':'sdn'}
